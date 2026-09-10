@@ -157,7 +157,7 @@ const TOOLTIPS = {
   pot: {
     1: 'Limited potential; best fit in current role.',
     2: 'Shows some potential; intentions visible but not yet translated into consistent actions.',
-    3: 'Ready for next step within 12–18 months; consistent progress, supports change.',
+    3: 'Ready for next step within 12-18 months; consistent progress, supports change.',
     4: 'High potential; could be promoted now, leads change and brings others along.',
   },
 };
@@ -166,10 +166,10 @@ const REF_DATA = [
     scores:[
       {n:4,cls:'s4',text:'Exceeds expectations; high impact beyond own scope, improves how the team works.'},
       {n:3,cls:'s3',text:'Solid and consistent results; leaves practices or artifacts the team can reuse.'},
-      {n:2,cls:'s2',text:'Delivers within assigned scope; efforts are visible, but improvement is needed.'},
-      {n:1,cls:'s1',text:'Activity is visible but outcomes are unclear; low performance.'}
+      {n:2,cls:'s2',text:'Delivers within the assigned scope; efforts are visible, but improvement is needed.'},
+      {n:1,cls:'s1',text:'Significant gaps; activity is visible but outcomes are unclear; low performance.'}
     ],
-    consider:['Quantity and quality of completed work','Proactivity in reaching goals','Complexity of tasks handled','Business or team impact'] },
+    consider:['Quantity and quality of completed work','Complexity of tasks handled','Proactivity in reaching goals','Business or team impact','Effective use of AI to deliver outcomes (where applicable)','Reusable artifacts (prompts, templates, playbooks, processes)'] },
   { name:'Development', sub:'Professional growth, skill improvement, learning ability',
     scores:[
       {n:4,cls:'s4',text:'Fast growth, strong learning mindset; drives own development and helps others grow.'},
@@ -177,7 +177,7 @@ const REF_DATA = [
       {n:2,cls:'s2',text:'Some growth, but inconsistent or slow; little transfer into real work.'},
       {n:1,cls:'s1',text:'No visible development or growth.'}
     ],
-    consider:['Learning new tools, technologies, or methods','Progress in soft or leadership skills','Application of new knowledge','Initiative in personal development'] },
+    consider:['Learning new tools, technologies, or methods (including AI)','Application of new knowledge in real tasks (including AI)','Progress in soft or leadership skills','Initiative and ownership of personal development'] },
   { name:'Feedback', sub:'Overall performance quality and behavior, based on feedback from peers or clients',
     scores:[
       {n:4,cls:'s4',text:'Strong positive influence; high professionalism, sets the standard for others.'},
@@ -185,15 +185,15 @@ const REF_DATA = [
       {n:2,cls:'s2',text:'Some concerns; generally meets minimum expectations.'},
       {n:1,cls:'s1',text:'Frequent issues with performance or behaviour.'}
     ],
-    consider:['Timeliness and accuracy of deliverables','Team collaboration and communication','Openness to feedback and ability to act on it','Accountability and initiative'] },
+    consider:['Timeliness and accuracy of deliverables (including AI-assisted work)','Team collaboration and communication','Openness to feedback and ability to act on it','Accountability and initiative'] },
   { name:'Potential', sub:'Readiness and ability to grow into more responsibility or a higher role',
     scores:[
       {n:4,cls:'s4',text:'High potential; could be promoted or upskilled now, leads change and brings others along.'},
-      {n:3,cls:'s3',text:'Ready for next step within 12–18 months; consistent progress, supports change in the team.'},
-      {n:2,cls:'s2',text:'Shows some potential; intentions visible but not yet translated into consistent actions or results.'},
+      {n:3,cls:'s3',text:'Demonstrates readiness for the next step within 12-18 months; consistent progress, supports change in the team.'},
+      {n:2,cls:'s2',text:'Shows some potential; intentions are visible but not yet translated into consistent actions or results.'},
       {n:1,cls:'s1',text:'Limited potential; best fit in current role.'}
     ],
-    consider:['Strategic thinking and problem solving','Ownership and initiative','Leadership capabilities','Motivation and aspiration for growth'] },
+    consider:['Strategic thinking and problem solving','Ownership and initiative','Leadership capabilities','Adaptability to new tools, processes and ways of working (including AI)','Motivation and aspiration for growth'] },
 ];
 let role = 'production';
 let scores = { ca: null, dev: null, fb: null, pot: null };
